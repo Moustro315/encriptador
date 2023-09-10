@@ -1,0 +1,264 @@
+
+/* sirbe para formatear la pagina(inicio)*/    
+  *{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif; /*Corresponde al tipo de letra que se usara en la pagina*/
+    box-sizing: border-box; /*sirve para que no se vea borde blanco en la pagina*/
+    
+  }	
+
+/* sirbe para formatear la pagina(final)*/  
+
+
+body{
+  background-color: #f4f4fc; /*correponde al color de condo que solicitan en el encriptador*/
+}
+
+
+header{
+  width: 100%;
+  height: 70px;
+}
+
+.logo{
+  width: 120px;
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+main{
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  left: -5%;
+  top: 3%;
+  justify-content: space-between;
+}
+
+
+
+
+.contendor_texto{
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  padding-left: 100px;
+  width: 900px;
+  height: 400px;
+
+}
+
+.cajatexto{
+  width: 80%;
+  height: 100%;
+  border: none;
+  background-color: #f4f4fc;
+  cursor: pointer;
+  color: #0A3871;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.cajatexto::placeholder{
+  color: #0A3871;
+}
+
+.alerta{
+  position: absolute;
+  top:500px;
+  left: 370px;
+  display: flex;
+  color: #495057;
+}
+
+.botones{
+  position: absolute;
+  top:530px;
+  left: 80px;
+  padding-left: 15%;
+  padding-top: 15px;
+}
+
+.btn-encriptar{
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #0A3871;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.btn-desencriptar{
+  width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.seccion2{
+  display: block;
+  position: relative;
+  width: 400px;
+  height: 630px;
+  right: 50px;
+  left: 60px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 32px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.contenedor-imagen{
+  position: absolute;
+  left: 30px;
+  top: 70px;
+  box-sizing: border-box;
+  padding-top: 50px;
+}
+
+.contenedor-parrafo{
+  position: absolute;
+  box-sizing: border-box;
+  top: 430px;
+  left: 40px;
+}
+
+.contenedor-parrafo h3{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  color: #343A40;
+}
+
+.contenedor-parrafo p{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #495057;
+  padding-top: 20px;
+}
+
+
+.resultado{
+  position: absolute;
+  box-sizing: border-box;
+  margin-left: 25px;
+}
+
+.texto-resultado{
+  color: #495057;
+  font-size: 25px;
+ 
+}
+
+.copiar{
+  display: flex;
+  position: absolute;
+  bottom: 400px;
+  top: 500px;
+  background-color: aqua;
+  padding-left: 40px;
+}
+
+
+.btn-copiar{
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  color: #0A3871;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #0A3871;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+  right: 4px;
+}
+
+.ocultar{
+  display: none;
+}
+
+
+
+
+
+
+
+/* ajustes a pantallas pequeñas(inicio)*/
+
+  @media(max-width: 680px){
+
+    .contenedor-imagen{
+      display: none;
+    }
+  
+    .contendor_texto{
+      margin-left: -230px;
+      width: 90%;
+      height: 30%;
+      
+    }
+
+    .cajatexto{
+      font-size: 20px;
+    }
+
+    .alerta{
+      margin-left: -280px;
+      margin-top: -190px;
+      font-size: 14px;
+    }
+
+    .seccion2{
+      width: 90%;
+      height: 35%;
+      top: 500px;
+      left: -3px;
+    }
+
+    .botones{
+      margin-left: -70px;
+      margin-top: -200px;
+    }
+
+
+    .contenedor-imagen{
+      margin-left: -400px;
+    }
+
+    .contenedor-parrafo{
+      margin-top: -400px;
+      
+    }
+
+    .btn-copiar{
+      margin-top: -430px;
+      margin-left: 30px;
+    }
+
+    .contenedor-imagen{
+      height: auto;
+    }
+
+  }
+
+/* ajustes a pantallas pequeñas(final)*/
